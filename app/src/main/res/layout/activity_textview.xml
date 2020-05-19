@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/testview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="花开"
+        android:textColor="#ff4500"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/testview_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="我到大大代码是可能的看看"
+        android:textSize="30sp"
+        android:textColor="#0036ff"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/testview_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="筛选"
+        android:layout_marginTop="10dp"
+        android:textColor="#0ff360"
+        android:textSize="40sp"
+        android:drawableRight="@drawable/fire"
+        android:drawablePadding="5dp"/>
+    <TextView
+        android:id="@+id/testview_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈哈哈哈哈"
+        android:textSize="40sp"
+        android:textColor="#0f36ff"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/testview_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="了咯解耦i"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/testview_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="哦好不好看他发表经济伦理电脑啊的危地马拉打我觉得里面就"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+</LinearLayout>
