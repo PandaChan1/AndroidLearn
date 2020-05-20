@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myfirstapp.Gridview.GridviewActivity;
+import com.example.myfirstapp.Listview.ListviewActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button mBtnTextView;
@@ -14,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnRadio;
     private Button mBtnCheckB;
     private Button mBtnlog;
+    private Button mBtnimageview;
+    private Button mBtnlistview;
+    private Button mBtnGridview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadio=findViewById(R.id.RadioBtn);
         mBtnCheckB=findViewById(R.id.check_box_1);
         mBtnlog=findViewById(R.id.btn_log);
+        mBtnimageview=findViewById(R.id.btn_Imagev);
+        mBtnlistview=findViewById(R.id.btn_listv);
+        mBtnGridview=findViewById(R.id.btn_grid);
+
         setLinstener();
     }
     private void setLinstener(){
@@ -48,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadio.setOnClickListener(cl);
         mBtnCheckB.setOnClickListener(cl);
         mBtnlog.setOnClickListener(cl);
+        mBtnimageview.setOnClickListener(cl);
+        mBtnlistview.setOnClickListener(cl);
+        mBtnGridview.setOnClickListener(cl);
     }
     private class click implements View.OnClickListener{
 
@@ -69,6 +82,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_log:
                     intent=new Intent(MainActivity.this,EditActivity.class);
+                    break;
+                case R.id.btn_Imagev:
+                    intent=new Intent(MainActivity.this,Imageview_Activity.class);
+                    break;
+                case R.id.btn_listv:
+                    intent=new Intent(MainActivity.this, ListviewActivity.class);
+                    break;
+                case R.id.btn_grid:
+                    intent=new Intent(MainActivity.this, GridviewActivity.class);
                     break;
             }
             startActivity(intent);
