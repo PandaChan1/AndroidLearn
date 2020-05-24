@@ -14,15 +14,33 @@ import com.example.myfirstapp.R;
 public class recyclerViewActivity extends AppCompatActivity {
 
     private Button mBtnLinear;
+    private Button mBtnLinear_rv;
+    private Button mBthGrid_rv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_view);
         mBtnLinear=findViewById(R.id.btn_linear);
+        mBtnLinear_rv=findViewById(R.id.btn_linear_rv);
+        mBthGrid_rv=findViewById(R.id.btn_Grid_rv);
         mBtnLinear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(recyclerViewActivity.this,LinearActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnLinear_rv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(recyclerViewActivity.this,HorizonRvActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBthGrid_rv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(recyclerViewActivity.this,GridRvActivity.class);
                 startActivity(intent);
             }
         });
