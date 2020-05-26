@@ -25,7 +25,7 @@ public class LinearActivity extends AppCompatActivity {
         mRcview.setAdapter(new LinearAdapter(LinearActivity.this, new LinearAdapter.OnItemClickLinstener() { //适配器
             @Override
             public void onClick(int pos) {
-                Toast.makeText(LinearActivity.this,"click"+pos,Toast.LENGTH_SHORT).show();
+                Toast.makeText(LinearActivity.this,"click:"+pos,Toast.LENGTH_SHORT).show();
             }
         }));
 
