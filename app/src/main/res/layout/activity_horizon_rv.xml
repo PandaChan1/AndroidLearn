@@ -8,6 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rv_hor"
-        android:background="@color/green"/>
+        android:background="#6B706C"/>
 
 </LinearLayout>

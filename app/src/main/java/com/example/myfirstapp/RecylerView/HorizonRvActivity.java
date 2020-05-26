@@ -21,8 +21,8 @@ public class HorizonRvActivity extends AppCompatActivity {
         mRvhori=findViewById(R.id.rv_hor);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(HorizonRvActivity.this);
         linearLayoutManager.setOrientation(RecyclerView.HORIZONTAL);
-        mRvhori.setLayoutManager(linearLayoutManager);
         mRvhori.addItemDecoration(new MyDecorationHori());
+        mRvhori.setLayoutManager(linearLayoutManager);
         mRvhori.setAdapter(new HoriAdapter(HorizonRvActivity.this, new HoriAdapter.OnItemClickLinstener() {
             @Override
             public void onClick(int pos) {
