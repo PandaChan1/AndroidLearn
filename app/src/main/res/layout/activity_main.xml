@@ -65,6 +65,12 @@
             android:layout_height="wrap_content"
             android:text="RecyclerView1"
             android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_webv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WebView"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 

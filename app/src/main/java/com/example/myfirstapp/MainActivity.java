@@ -11,6 +11,7 @@ import com.example.myfirstapp.Gridview.GridviewActivity;
 import com.example.myfirstapp.Listview.ListviewActivity;
 import com.example.myfirstapp.RecylerView.LinearActivity;
 import com.example.myfirstapp.RecylerView.recyclerViewActivity;
+import com.example.myfirstapp.webView.webViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnlistview;
     private Button mBtnGridview;
     private Button mBtnRV1;
+    private Button mBtnwebv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnlistview=findViewById(R.id.btn_listv);
         mBtnGridview=findViewById(R.id.btn_grid);
         mBtnRV1=findViewById(R.id.btn_rv);
+        mBtnwebv=findViewById(R.id.btn_webv);
 
         setLinstener();
     }
@@ -66,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnlistview.setOnClickListener(cl);
         mBtnGridview.setOnClickListener(cl);
         mBtnRV1.setOnClickListener(cl);
+        mBtnwebv.setOnClickListener(cl);
     }
     private class click implements View.OnClickListener{
 
@@ -99,6 +103,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_rv:
                     intent=new Intent(MainActivity.this, recyclerViewActivity.class);
+                    break;
+                case R.id.btn_webv:
+                    intent=new Intent(MainActivity.this, webViewActivity.class);
                     break;
             }
             startActivity(intent);
