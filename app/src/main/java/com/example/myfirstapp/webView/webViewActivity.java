@@ -59,7 +59,7 @@ private WebView mWebv;
     }
     class MyWebChromeClient extends WebChromeClient{
         @Override
-        public void onProgressChanged(WebView view, int newProgress) {
+        public void onProgressChanged(WebView view, int newProgress) { //网页加载时顶端的进度条
             super.onProgressChanged(view, newProgress);
         }
 
