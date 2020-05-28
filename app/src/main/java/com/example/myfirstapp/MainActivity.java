@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnGridview;
     private Button mBtnRV1;
     private Button mBtnwebv;
+    private Button mBtnToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnGridview=findViewById(R.id.btn_grid);
         mBtnRV1=findViewById(R.id.btn_rv);
         mBtnwebv=findViewById(R.id.btn_webv);
+        mBtnToast=findViewById(R.id.btn_Toast);
 
         setLinstener();
     }
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnGridview.setOnClickListener(cl);
         mBtnRV1.setOnClickListener(cl);
         mBtnwebv.setOnClickListener(cl);
+        mBtnToast.setOnClickListener(cl);
     }
     private class click implements View.OnClickListener{
 
@@ -107,6 +110,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_webv:
                     intent=new Intent(MainActivity.this, webViewActivity.class);
                     break;
+                case R.id.btn_Toast:
+                    intent=new Intent(MainActivity.this,ToastActivity.class);
+                    startActivity(intent);
             }
             startActivity(intent);
         }
