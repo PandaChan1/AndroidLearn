@@ -15,9 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mBtnUI=findViewById(R.id.btn_ui);
+        SetListener();
 
     }
-    class OnClick implements View.OnClickListener{
+    private void SetListener(){
+        OnClick ol=new OnClick();
+        mBtnUI.setOnClickListener(ol);
+    }
+   private class OnClick implements View.OnClickListener{
 
         @Override
         public void onClick(View v) {
