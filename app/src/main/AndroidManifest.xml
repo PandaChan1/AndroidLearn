@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ToastActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".ToastActivity" />
         <activity android:name=".webView.webViewActivity" />
         <activity android:name=".RecylerView.pubuRecyclerViewActivity" />
         <activity android:name=".RecylerView.GridRvActivity" />
@@ -27,7 +29,7 @@
         <activity android:name=".textviewActivity" />
         <activity android:name=".Listview.ListviewActivity" />
         <activity android:name=".Gridview.GridviewActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".UIActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.myfirstapp.MainActivity;
 import com.example.myfirstapp.R;
 
 public class LinearActivity extends AppCompatActivity {
