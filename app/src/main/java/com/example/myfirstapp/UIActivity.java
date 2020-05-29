@@ -26,6 +26,7 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnwebv;
     private Button mBtnToast;
     private Button mBtnDialog;
+    private Button mBtnProgess;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +59,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnwebv=findViewById(R.id.btn_webv);
         mBtnToast=findViewById(R.id.btn_Toast);
         mBtnDialog=findViewById(R.id.btn_dialog);
+        mBtnProgess=findViewById(R.id.btn_progess);
 
         setLinstener();
     }
@@ -75,6 +77,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnwebv.setOnClickListener(cl);
         mBtnToast.setOnClickListener(cl);
         mBtnDialog.setOnClickListener(cl);
+        mBtnProgess.setOnClickListener(cl);
     }
     private class click implements View.OnClickListener{
 
@@ -114,10 +117,13 @@ public class UIActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_Toast:
                     intent=new Intent(UIActivity.this,ToastActivity.class);
-                    startActivity(intent);
+                    break;
                 case R.id.btn_dialog:
                     intent=new Intent(UIActivity.this,DialogActivity.class);
-                    startActivity(intent);
+                    break;
+                case R.id.btn_progess:
+                    intent=new Intent(UIActivity.this,ProgessActivity.class);
+                    break;
             }
             startActivity(intent);
         }

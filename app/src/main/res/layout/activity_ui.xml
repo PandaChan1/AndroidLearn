@@ -81,6 +81,12 @@
             android:layout_height="wrap_content"
             android:text="Dialog"
             android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_progess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progess"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 

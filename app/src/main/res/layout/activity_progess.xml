@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <ProgressBar
+        android:id="@+id/pb_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ProgressBar
+        android:id="@+id/pb_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.ProgressBar"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:id="@+id/pb_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="30"
+        android:secondaryProgress="60" />
+    <Button
+        android:id="@+id/btn_pb_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="模拟进度"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:id="@+id/pb_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyProgessBar"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btn_progess_dialog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog1"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/btn_progess_dialog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ProgressDialog2"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>

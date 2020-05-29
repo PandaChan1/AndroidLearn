@@ -7,5 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="MyProgessBar">
+        <item name="android:indeterminateDrawable">@drawable/bg_progess</item>
+    </style>
 
 </resources>
