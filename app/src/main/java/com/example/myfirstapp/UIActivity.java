@@ -27,6 +27,7 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnToast;
     private Button mBtnDialog;
     private Button mBtnProgess;
+    private Button mBtnCustomDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +61,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnToast=findViewById(R.id.btn_Toast);
         mBtnDialog=findViewById(R.id.btn_dialog);
         mBtnProgess=findViewById(R.id.btn_progess);
+        mBtnCustomDialog=findViewById(R.id.btn_custom_dialog);
 
         setLinstener();
     }
@@ -78,6 +80,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnToast.setOnClickListener(cl);
         mBtnDialog.setOnClickListener(cl);
         mBtnProgess.setOnClickListener(cl);
+        mBtnCustomDialog.setOnClickListener(cl);
     }
     private class click implements View.OnClickListener{
 
@@ -123,6 +126,9 @@ public class UIActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_progess:
                     intent=new Intent(UIActivity.this,ProgessActivity.class);
+                    break;
+                case R.id.btn_custom_dialog:
+                    intent=new Intent(UIActivity.this,CustomDialogActivity.class);
                     break;
             }
             startActivity(intent);

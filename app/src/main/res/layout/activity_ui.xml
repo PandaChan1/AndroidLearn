@@ -25,12 +25,7 @@
             android:text="RdidoButton"
             android:layout_marginTop="5dp"
             android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/check_box_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox"
-            android:textAllCaps="false" />
+
         <Button
             android:id="@+id/btn_log"
             android:layout_width="match_parent"
@@ -44,6 +39,14 @@
             android:layout_height="wrap_content"
             android:text="ImageView"
             android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/check_box_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:textAllCaps="false" />
+
         <Button
             android:id="@+id/btn_listv"
             android:layout_width="match_parent"
@@ -86,6 +89,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Progess"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_custom_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CustomDialog"
             android:textAllCaps="false"/>
 
     </LinearLayout>
