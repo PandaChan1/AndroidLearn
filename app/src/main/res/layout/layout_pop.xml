@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="好"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/popup_background"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+    <TextView
+        android:id="@+id/tv_soso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="还行"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/popup_background"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+    <TextView
+        android:id="@+id/tv_bad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="不好"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/popup_background"/>
+
+
+</LinearLayout>

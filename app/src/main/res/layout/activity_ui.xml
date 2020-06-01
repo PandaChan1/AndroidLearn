@@ -96,6 +96,12 @@
             android:layout_height="wrap_content"
             android:text="CustomDialog"
             android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn_Pop_Up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PopUpWindow"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 
