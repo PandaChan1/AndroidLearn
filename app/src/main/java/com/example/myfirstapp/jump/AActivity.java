@@ -78,7 +78,7 @@ public class AActivity extends AppCompatActivity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         Log.d("AActivity","---onNewIntent---");
-        Log.d("AActivity","taskid:"+getTaskId()+"   "+hashCode());
+        Log.d("AActivity","taskid:"+getTaskId()+"   hash:"+hashCode());
         logTaskname();
     }
 

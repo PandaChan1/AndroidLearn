@@ -42,10 +42,10 @@
         <activity android:name=".UIActivity" />
         <activity android:name=".jump.AActivity"
             android:label="A"
-            android:launchMode="standard"></activity>
+            android:launchMode="singleTop"></activity>
         <activity android:name=".jump.BActivity"
             android:label="B"
-            android:launchMode="standard">
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="com.example.test.BActivity"/>
 

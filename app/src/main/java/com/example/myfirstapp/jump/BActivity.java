@@ -63,7 +63,7 @@ public class BActivity extends AppCompatActivity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         Log.d("BActivity","---onNewIntent---");
-        Log.d("BActivity","taskid:"+getTaskId()+"   "+hashCode());
+        Log.d("BActivity","taskid:"+getTaskId()+"   hash:"+hashCode());
         logTaskname();
     }
 
