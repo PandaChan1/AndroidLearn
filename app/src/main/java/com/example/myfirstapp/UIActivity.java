@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.example.myfirstapp.Gridview.GridviewActivity;
 import com.example.myfirstapp.Listview.ListviewActivity;
 import com.example.myfirstapp.RecylerView.recyclerViewActivity;
+import com.example.myfirstapp.jump.AActivity;
 import com.example.myfirstapp.webView.webViewActivity;
 
 public class UIActivity extends AppCompatActivity {
@@ -30,6 +31,7 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnCustomDialog;
     private Button mBtnPopUp;
     private Button mBtnLifeCycle;
+    private Button mBtnJump;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +68,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnCustomDialog=findViewById(R.id.btn_custom_dialog);
         mBtnPopUp=findViewById(R.id.btn_Pop_Up);
         mBtnLifeCycle=findViewById(R.id.btn_lifecycle);
+        mBtnJump=findViewById(R.id.btn_jump);
 
         setLinstener();
     }
@@ -87,6 +90,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnCustomDialog.setOnClickListener(cl);
         mBtnPopUp.setOnClickListener(cl);
         mBtnLifeCycle.setOnClickListener(cl);
+        mBtnJump.setOnClickListener(cl);
     }
     private class click implements View.OnClickListener{
 
@@ -141,6 +145,9 @@ public class UIActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_lifecycle:
                     intent=new Intent(UIActivity.this,LifeCycleActivity.class);
+                    break;
+                case R.id.btn_jump:
+                    intent=new Intent(UIActivity.this, AActivity.class);
                     break;
             }
             startActivity(intent);
