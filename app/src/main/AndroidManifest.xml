@@ -41,9 +41,11 @@
         <activity android:name=".Gridview.GridviewActivity" />
         <activity android:name=".UIActivity" />
         <activity android:name=".jump.AActivity"
-            android:label="A"/>
+            android:label="A"
+            android:launchMode="standard"></activity>
         <activity android:name=".jump.BActivity"
-            android:label="B">
+            android:label="B"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="com.example.test.BActivity"/>
 
