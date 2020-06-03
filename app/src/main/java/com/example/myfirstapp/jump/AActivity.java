@@ -68,11 +68,11 @@ public class AActivity extends AppCompatActivity {
 
 
     }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Toast.makeText(AActivity.this,data.getExtras().getString("mesg"),Toast.LENGTH_LONG).show();
-    }
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//        Toast.makeText(AActivity.this,data.getExtras().getString("mesg"),Toast.LENGTH_LONG).show();
+//    }
 
     @Override
     protected void onNewIntent(Intent intent) {

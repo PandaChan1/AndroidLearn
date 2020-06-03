@@ -49,8 +49,8 @@ public class BActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent();
                 Bundle bundle1=new Bundle();
-                bundle.putString("mesg","我回来了!");
-                intent.putExtras(bundle);
+                bundle1.putString("mesg","我回来了!");
+                intent.putExtras(bundle1);
                 setResult(Activity.RESULT_OK,intent);
                 finish();
             }
