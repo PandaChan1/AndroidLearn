@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Fragment.ContainerActivity"></activity>
         <activity android:name=".LifeCycleActivity" />
         <activity android:name=".PopUpActivity" />
         <activity android:name=".CustomDialogActivity" />
@@ -40,16 +41,16 @@
         <activity android:name=".Listview.ListviewActivity" />
         <activity android:name=".Gridview.GridviewActivity" />
         <activity android:name=".UIActivity" />
-        <activity android:name=".jump.AActivity"
-            android:label="A"
-            android:launchMode="singleTop"></activity>
-        <activity android:name=".jump.BActivity"
-            android:label="B"
-            android:launchMode="singleTop">
+        <activity
+            android:name=".jump.AActivity"
+            android:label="A"></activity>
+        <activity
+            android:name=".jump.BActivity"
+            android:label="B">
             <intent-filter>
-                <action android:name="com.example.test.BActivity"/>
+                <action android:name="com.example.test.BActivity" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myfirstapp.Fragment.ContainerActivity;
 import com.example.myfirstapp.Gridview.GridviewActivity;
 import com.example.myfirstapp.Listview.ListviewActivity;
 import com.example.myfirstapp.RecylerView.recyclerViewActivity;
@@ -32,6 +33,7 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnPopUp;
     private Button mBtnLifeCycle;
     private Button mBtnJump;
+    private Button mBtnfragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +71,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnPopUp=findViewById(R.id.btn_Pop_Up);
         mBtnLifeCycle=findViewById(R.id.btn_lifecycle);
         mBtnJump=findViewById(R.id.btn_jump);
+        mBtnfragment=findViewById(R.id.btn_fragment);
 
         setLinstener();
     }
@@ -91,6 +94,7 @@ public class UIActivity extends AppCompatActivity {
         mBtnPopUp.setOnClickListener(cl);
         mBtnLifeCycle.setOnClickListener(cl);
         mBtnJump.setOnClickListener(cl);
+        mBtnfragment.setOnClickListener(cl);
     }
     private class click implements View.OnClickListener{
 
@@ -148,6 +152,9 @@ public class UIActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_jump:
                     intent=new Intent(UIActivity.this, AActivity.class);
+                    break;
+                case R.id.btn_fragment:
+                    intent=new Intent(UIActivity.this, ContainerActivity.class);
                     break;
             }
             startActivity(intent);
