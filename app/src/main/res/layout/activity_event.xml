@@ -12,5 +12,11 @@
         android:text="Click Me"
         android:textAllCaps="false"
         android:onClick="show"/>
+    <com.example.myfirstapp.mwidget.MyButton
+        android:id="@+id/btn_mybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MyButton"
+        android:textAllCaps="false"/>
 
 </LinearLayout>

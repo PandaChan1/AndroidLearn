@@ -4,19 +4,34 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myfirstapp.mwidget.MyButton;
 import com.example.myfirstapp.util.ToastUtil;
 
 public class EventActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mBtnclickme;
+    private MyButton mBtnmybutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
         mBtnclickme=findViewById(R.id.btn_clickme);
+        mBtnmybutton=findViewById(R.id.btn_mybutton);
+        mBtnmybutton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch(event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        Log.d("Linstener","---onTouchEvent---");
+                        break;
+                }
+                return false;
+            }
+        });
         //内部类实现
         mBtnclickme.setOnClickListener(new onclick());
         //匿名内部类实现
@@ -64,5 +79,15 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                 ToastUtil.showMsg(EventActivity.this,"布局文件click.....");
                 break;
         }
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                Log.d("Activity","---onTouchEvent---");
+                break;
+        }
+        return false;
     }
 }
