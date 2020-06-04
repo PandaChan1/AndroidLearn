@@ -3,6 +3,22 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center">
+    <Button
+        android:id="@+id/btn_sendmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="给Activity传送消息"/>
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="更换为BFragment"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="更换TextView的文字"/>
     <TextView
         android:id="@+id/tv_titlea"
         android:layout_width="match_parent"
