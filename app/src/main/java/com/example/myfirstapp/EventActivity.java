@@ -20,13 +20,13 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         //内部类实现
         mBtnclickme.setOnClickListener(new onclick());
         //匿名内部类实现
-        mBtnclickme.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("匿名内部类","click");
-                ToastUtil.showMsg(EventActivity.this,"匿名内部类click.....");
-            }
-        });
+//        mBtnclickme.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.d("匿名内部类","click");
+//                ToastUtil.showMsg(EventActivity.this,"匿名内部类click.....");
+//            }
+//        });
         //通过事件源所在的类实现
 //        mBtnclickme.setOnClickListener(EventActivity.this);
         //通过外部类实现------不常用
