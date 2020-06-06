@@ -2,6 +2,7 @@ package com.example.myfirstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -14,6 +15,7 @@ import com.example.myfirstapp.util.ToastUtil;
 public class EventActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mBtnclickme;
     private MyButton mBtnmybutton;
+    private Button mBtnHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,19 +23,33 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_event);
         mBtnclickme=findViewById(R.id.btn_clickme);
         mBtnmybutton=findViewById(R.id.btn_mybutton);
+        mBtnHandler=findViewById(R.id.btn_handler);
         mBtnmybutton.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch(event.getAction()){
                     case MotionEvent.ACTION_DOWN:
-                        Log.d("Linstener","---onTouchEvent---");
+                        Log.d("Linstener","---onTouch---");
                         break;
                 }
                 return false;
             }
         });
+       mBtnmybutton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Log.d("Linstener","---onClick---");
+           }
+       });
         //内部类实现
         mBtnclickme.setOnClickListener(new onclick());
+        mBtnHandler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(EventActivity.this,HandlerActivity.class);
+                startActivity(intent);
+            }
+        });
         //匿名内部类实现
 //        mBtnclickme.setOnClickListener(new View.OnClickListener() {
 //            @Override
