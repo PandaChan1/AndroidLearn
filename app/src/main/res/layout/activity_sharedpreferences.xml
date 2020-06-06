@@ -4,23 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".DataStorage.sharedpreferencesActivity"
     android:orientation="vertical">
-    <Button
-        android:id="@+id/btn_ui"
+    <EditText
+        android:id="@+id/et_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UI"
-        android:textAllCaps="false"/>
+        android:padding="15dp"
+        android:singleLine="true"
+        android:hint="输入内容"/>
     <Button
-        android:id="@+id/btn_event"
+        android:id="@+id/btn_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="事件机制"/>
+        android:text="保存"
+        android:layout_marginTop="10dp"/>
     <Button
-        android:id="@+id/btn_data"
+        android:id="@+id/btn_show"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="数据存储"/>
+        android:text="显示"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
 
 
 </LinearLayout>

@@ -4,23 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".DataStorage.MDatastorageActivity"
     android:orientation="vertical">
     <Button
-        android:id="@+id/btn_ui"
+        android:id="@+id/btn_sharedpreferences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UI"
+        android:text="SharedPreferences"
         android:textAllCaps="false"/>
     <Button
-        android:id="@+id/btn_event"
+        android:id="@+id/btn_file"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="事件机制"/>
-    <Button
-        android:id="@+id/btn_data"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="数据存储"/>
-
+        android:text="file"
+        android:textAllCaps="false"/>
 
 </LinearLayout>
