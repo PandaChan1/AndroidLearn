@@ -9,12 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myfirstapp.Broadcast.BroadcastActivity;
 import com.example.myfirstapp.DataStorage.MDatastorageActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button mBtnUI;
     private Button mBtnevent;
     private Button mBtnData;
+    private Button mBtnBroad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnUI=findViewById(R.id.btn_ui);
         mBtnevent=findViewById(R.id.btn_event);
         mBtnData=findViewById(R.id.btn_data);
+        mBtnBroad=findViewById(R.id.btn_broad);
         SetListener();
 
 
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnUI.setOnClickListener(ol);
         mBtnevent.setOnClickListener(ol);
         mBtnData.setOnClickListener(ol);
+        mBtnBroad.setOnClickListener(ol);
     }
    private class OnClick implements View.OnClickListener{
 
@@ -49,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_data:
                     intent=new Intent(MainActivity.this, MDatastorageActivity.class);
+                    break;
+                case R.id.btn_broad:
+                    intent=new Intent(MainActivity.this, BroadcastActivity.class);
                     break;
             }
             startActivity(intent);
