@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Broadcast.BroadcastActivity2"></activity>
+        <activity android:name=".anime.AnimeActivity"></activity>
+        <activity android:name=".anime.Object_animActivity" />
+        <activity android:name=".Broadcast.BroadcastActivity2" />
         <activity android:name=".Broadcast.BroadcastActivity" />
         <activity android:name=".DataStorage.FilesActivity" />
         <activity android:name=".DataStorage.sharedpreferencesActivity" />

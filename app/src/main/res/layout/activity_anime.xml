@@ -4,33 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".anime.AnimeActivity"
     android:orientation="vertical">
     <Button
-        android:id="@+id/btn_ui"
+        android:id="@+id/anime1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UI"
-        android:textAllCaps="false"/>
+        android:text="属性动画"/>
     <Button
-        android:id="@+id/btn_event"
+        android:id="@+id/anime2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="事件机制"/>
+        android:text="2"/>
     <Button
-        android:id="@+id/btn_data"
+        android:id="@+id/anime3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="数据存储"/>
-    <Button
-        android:id="@+id/btn_broad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="广播"/>
-    <Button
-        android:id="@+id/btn_donghua"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="动画"/>
-
+        android:text="3"/>
 
 </LinearLayout>

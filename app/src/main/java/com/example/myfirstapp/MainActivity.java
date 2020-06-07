@@ -11,12 +11,15 @@ import android.widget.Button;
 
 import com.example.myfirstapp.Broadcast.BroadcastActivity;
 import com.example.myfirstapp.DataStorage.MDatastorageActivity;
+import com.example.myfirstapp.anime.AnimeActivity;
+import com.example.myfirstapp.anime.Object_animActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button mBtnUI;
     private Button mBtnevent;
     private Button mBtnData;
     private Button mBtnBroad;
+    private Button mBtndonghua;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnevent=findViewById(R.id.btn_event);
         mBtnData=findViewById(R.id.btn_data);
         mBtnBroad=findViewById(R.id.btn_broad);
+        mBtndonghua=findViewById(R.id.btn_donghua);
         SetListener();
 
 
@@ -38,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnevent.setOnClickListener(ol);
         mBtnData.setOnClickListener(ol);
         mBtnBroad.setOnClickListener(ol);
+        mBtndonghua.setOnClickListener(ol);
     }
    private class OnClick implements View.OnClickListener{
 
@@ -56,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_broad:
                     intent=new Intent(MainActivity.this, BroadcastActivity.class);
+                    break;
+                case R.id.btn_donghua:
+                    intent=new Intent(MainActivity.this, AnimeActivity.class);
                     break;
             }
             startActivity(intent);
