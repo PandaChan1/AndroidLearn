@@ -3,6 +3,7 @@ package com.example.myfirstapp.DataStorage;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +13,7 @@ import com.example.myfirstapp.R;
 
 import org.w3c.dom.Text;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -54,7 +56,22 @@ public class FilesActivity extends AppCompatActivity {
     private void save(String content){
         FileOutputStream fileOutputStream =null;
         try {
-            fileOutputStream=openFileOutput(mFilename,MODE_PRIVATE);
+//            内部存储
+//            fileOutputStream=openFileOutput(mFilename,MODE_PRIVATE);
+            //外部存储
+            //创建文件夹
+            File dir=new File(Environment.getExternalStorageDirectory(),"cy");
+            if(!dir.exists()){
+                dir.mkdir();
+            }
+            File file=new File(dir,mFilename);
+            //创建文件
+            if (!file.exists()){
+                file.createNewFile();
+            }
+            fileOutputStream=new FileOutputStream(file);
+
+
             fileOutputStream.write(content.getBytes());
 
         }  catch (IOException e) {
@@ -74,7 +91,11 @@ public class FilesActivity extends AppCompatActivity {
     private String read(){
         FileInputStream fileInputStream=null;
         try {
-            fileInputStream=openFileInput(mFilename);
+//            //内部存储读取
+//            fileInputStream=openFileInput(mFilename);
+            //设置文件路径
+            File file=new File(Environment.getExternalStorageDirectory().getAbsolutePath()+File.separator+"cy",mFilename);
+            fileInputStream=new FileInputStream(file);
             byte[] buff=new byte[1024]; //一次读取1024字节
             StringBuilder sb=new StringBuilder(""); //实现拼接
             int len=0;
