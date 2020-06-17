@@ -21,11 +21,11 @@ public class MyButton extends AppCompatButton {
         super(context, attrs, defStyleAttr);
     }
 
-//    @Override
-//    public boolean dispatchTouchEvent(MotionEvent event) { //事件分发入口方法
-//        Log.d("MyButton","---dispatchTouchEvent---");
-//        return super.dispatchTouchEvent(event);
-//    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent event) { //事件分发入口方法
+        Log.d("MyButton","---dispatchTouchEvent---");
+        return super.dispatchTouchEvent(event);
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
